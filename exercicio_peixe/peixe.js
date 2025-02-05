@@ -18,12 +18,13 @@ function preload() {
     this.load.image('logo', 'assets/logo-inteli_azul.png')
 
     this.load.image('peixe', 'assets/peixes/peixinho_laranja.png')
+    this.load.image('bau', 'assets/bau.png')
 }
 function create(){
     this.add.image(400, 300, 'mar');
 
     this.add.image(400, 525, 'logo').setScale(0.5);
-
+    this.add.image(700,500, 'bau').setScale(0.2)
     peixinho = this.add.image(400, 300, 'peixe').setOrigin(0.5, 0.5).setFlip(true, false);
 }
 function update(){
