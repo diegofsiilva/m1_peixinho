@@ -13,10 +13,10 @@ var config = {
 var game = new Phaser.Game(config);
 var peixinho;
 function preload() {
-    this.load.image('mar', '/m1_peixinho/assets/bg_azul-claro.png');
-    this.load.image('logo', '/m1_peixinho/assets/logo-inteli_azul.png');
-    this.load.image('peixe', '/m1_peixinho/assets/peixes/peixinho_laranja.png');
-    this.load.image('bau', '/m1_peixinho/assets/bau.png');
+    this.load.image('mar', '../assets/bg_azul-claro.png');
+    this.load.image('logo', '../assets/logo-inteli_azul.png');
+    this.load.image('peixe', '../assets/peixes/peixinho_laranja.png');
+    this.load.image('bau', '../assets/bau.png');
 
 }
 function create(){
