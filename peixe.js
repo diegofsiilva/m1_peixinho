@@ -1,24 +1,28 @@
-const config = {
+var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
+
     scene: {
         preload: preload,
-        create: create
+        create: create,
+        update: update
     }
 };
 
-const game = new Phaser.Game(config);
-
+var game = new Phaser.Game(config);
+var peixinho;
 function preload() {
-    console.log("✅ preload() foi chamado!"); // Teste para ver se preload está rodando
-    this.load.image('mar', 'https://diegofsiilva.github.io/m1_peixinho/assets/bg_azul-claro.png');
+    console.log("✅ preload() foi chamado!"); // Teste no console
+    this.load.image('mar', '../assets/bg_azul-claro.png');
+
+    this.load.image('logo', '../assets/logo-inteli_azul.png');
+    this.load.image('peixe', '../assets/peixes/peixinho_laranja.png');
+    this.load.image('bau', '../assets/bau.png');
+
 }
-
-function create() {
-    console.log("✅ create() foi chamado!"); // Teste para ver se create está rodando
+function create(){
     this.add.image(400, 300, 'mar');
-
 
     this.add.image(400, 525, 'logo').setScale(0.5);
     this.add.image(700,500, 'bau').setScale(0.2)
