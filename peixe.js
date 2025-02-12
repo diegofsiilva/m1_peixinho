@@ -13,7 +13,8 @@ var config = {
 var game = new Phaser.Game(config);
 var peixinho;
 function preload() {
-    this.load.image('mar', 'assets/bg_azul-claro.png');
+    this.load.image('mar', 'https://diegofsiilva.github.io/m1_peixinho/assets/bg_azul-claro.png');
+
     this.load.image('logo', 'assets/logo-inteli_azul.png');
     this.load.image('peixe', 'assets/peixes/peixinho_laranja.png');
     this.load.image('bau', 'assets/bau.png');
